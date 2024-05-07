@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items vertically */
+}
+
+.typewriter {
+    color: white;
+    text-align: center;
+    max-width: 100%; /* Adjust the maximum width of the container */
+    overflow: hidden; /* Ensure text stays in a single line */
+}
+
+#typewriter-text {
+    font-family: monospace;
+    font-size: 24px;
+    white-space: nowrap; /* Keep the text in a single line */
+    overflow: hidden; /* Hide any overflow */
+    border-right: .15em solid orange;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+#video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+video {
+    width: 480px;
+    height: 360px;
+    border: 1px solid #ccc;
+}
+
+#capture-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

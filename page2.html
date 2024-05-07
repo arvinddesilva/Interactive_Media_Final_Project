@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Capture</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+
+    <div class="flex-container">
+
+        <div class="typewriter" id="container">
+            <h1 id="typewriter-text"></h1>
+        </div>
+
+        <br><br><br>
+
+        <div id="video-container">
+            <video id="video-feed" autoplay></video>
+            <button id="capture-button">Capture</button>
+        </div>
+
+        <canvas id="canvas" style="display: none;"></canvas>
+
+    </div>
+
+    <audio id="text-sound" preload="auto">
+        <source src="grindr_notification_sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="page2.js"></script>
+
+</body>
+</html>

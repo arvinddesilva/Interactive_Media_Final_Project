@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+  }
+
+.typewriter {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    max-width: 60%; /* Adjust the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow-wrap: break-word; /* Allow long words to wrap */
+    min-height: 3em; /* Set a minimum height for the container */
+}
+
+#typewriter-text {
+    font-family: monospace;
+    font-size: 24px;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: pre-wrap; /* Preserve line breaks and wrap long lines */
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+  #action-button {
+    display: none; /* Hide the button initially */
+    background-color: orange;
+    border: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 24px;
+    text-align: center;
+    text-decoration: none;
+    animation: glowing 1500ms infinite;
+  }
+
+  @keyframes glowing {
+    0% { background-color: #FFA500; box-shadow: 0 0 3px #FFA500; } /* Orange color */
+    50% { background-color: #FF8C00; box-shadow: 0 0 40px #FF8C00; } /* Darker orange */
+    100% { background-color: #FFA500; box-shadow: 0 0 3px #FFA500; } /* Orange color */
+  }
